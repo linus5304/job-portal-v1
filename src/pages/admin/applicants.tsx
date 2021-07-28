@@ -1,5 +1,4 @@
 import React from "react";
-import { AdminLayout } from "../../components/AdminLayout";
 import {TableLayout} from '../../components/table/TableLayout'
 import {columns, data, options} from '../../utils/data'
 
@@ -13,5 +12,5 @@ const Applicants: React.FC<ApplicantsProps> = ({}) => {
   );
 };
 
-Applicants.Layout = AdminLayout;
+Applicants.Layout = "L1";
 export default Applicants;

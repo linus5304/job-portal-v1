@@ -1,9 +1,9 @@
 import { Form, Input, InputNumber, Button, Card, Col, Row } from "antd";
 import React from "react";
-import { AdminLayout } from "../../components/AdminLayout";
 import { ImgUpload } from "./../../components/ImgUpload";
 
-interface settingsProps {}
+interface settingsProps {
+}
 
 const layout = {
   labelCol: { span: 4 },
@@ -84,6 +84,6 @@ const settings: React.FC<settingsProps> = ({}) => {
   );
 };
 
-settings.Layout = AdminLayout;
+settings.Layout = "L1";
 
 export default settings;

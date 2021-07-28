@@ -2,9 +2,16 @@ import React from "react";
 React.useLayoutEffect = React.useEffect;
 import "antd/dist/antd.css";
 import "../styles/styles.css";
+import { DashboardLayout } from '../components/DashboardLayout';
+import { HomeLayout } from "../components/HomeLayout";
+const layouts = {
+  L1: DashboardLayout,
+  L2: HomeLayout,
+}
+
 
 const App = ({ Component, pageProps }) => {
-  const Layout = Component.Layout || EmptyLayout;
+  const Layout = layouts[Component.Layout] || EmptyLayout;
   return (
     <div>
       <Layout>

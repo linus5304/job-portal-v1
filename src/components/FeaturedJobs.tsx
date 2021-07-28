@@ -1,4 +1,5 @@
 import React from 'react';
+import { HomeLayout } from './HomeLayout';
 import { JobItem } from './JobItem';
 
 
@@ -22,3 +23,5 @@ export const FeaturedJobs: React.FC<FeaturedJobsProps> = ({}) => {
             </div>
         );
 };
+
+export default FeaturedJobs;

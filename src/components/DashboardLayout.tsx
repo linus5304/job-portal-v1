@@ -7,11 +7,11 @@ import { Navbar } from './Navbar';
 
 const { Header, Content, Sider } = Layout;
 
-interface AdminLayoutProps {}
+interface DashboardLayoutProps {}
 
 
 
-export const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
+export const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   let state = "";
 
   const [collapsed, setCollapsed] = useState(false);
