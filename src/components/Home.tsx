@@ -11,7 +11,7 @@ interface HomeProps {}
 export const Home: React.FC<HomeProps> = ({}) => {
   return (
     <>
-      <Hero />
+      <Hero heroVariant='large' text="SEARCH 9 LIVE JOBS" subtext="Finding your new job just got easier"/>
       <Employers />
       <HeroPost />
       <FeaturedJobs />

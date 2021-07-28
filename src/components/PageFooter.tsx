@@ -9,7 +9,6 @@ interface PageFooterProps {}
 export const PageFooter: React.FC<PageFooterProps> = ({}) => {
   return (
     <div className="container">  
-    <Divider style={{background:'#f7f7f7'}}/>
     <div className="page-footer">
       <div>
         <ul>
@@ -44,6 +43,8 @@ export const PageFooter: React.FC<PageFooterProps> = ({}) => {
         </ul>
       </div>
     </div>
+    <Divider style={{background:'#f7f7f7'}}/>
+
     <div style={{alignItems: 'center', display: 'flex'}}>
             <FaKeycdn style={{fontSize: 35, fontWeight:'bold', color:"#f1ecf9"}}/>
             <div style={{fontSize: 16,  color:"#f1ecf9"}}><Link href="/">goJobs.com</Link></div>

@@ -1,13 +1,42 @@
-import React from 'react';
+import React, {useState} from "react";
+import { Hero } from "../components/Hero";
+import { Row, Col, Space, Button } from "antd";
+import { JobItem } from "../components/JobItem";
+import { Filter } from "../components/filter/Filter";
 
+interface jobsProps {}
 
-interface jobsProps{
-
-}
-
-
-export const jobs: React.FC<jobsProps> = ({}) => {
-        return (
-            <div>Hello</div>
-        );
+const jobs: React.FC<jobsProps> = ({}) => {
+  return (
+    <>
+      <Hero heroVariant="small"/>
+      <div className="container">
+        <div style={{ paddingTop: "10%",  paddingBottom: "5%"}}>
+           
+          <Row gutter={[48, 16]}>
+            <Col span={4} >
+            
+                <Space size={30} direction="vertical">
+                <Filter title="Jobs Type" values={['Full Time', 'Part Time', 'Contract']}/>
+                <Filter title="Experience Level" values={["All", "Senior", "Mid", 'Junior']}/>
+                <Filter title="Region" values={["All", "Yaiunde", "Douala", 'Bafoussam']}/>
+                </Space>
+            </Col>
+            <Col span={20}>
+            <h2>9 Jobs Found</h2> 
+              <JobItem />
+              <JobItem />
+              <div style={{display: 'flex', justifyContent:'center'}}>
+              <Button type="primary" size="large" loading={false}>Load more</Button>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </div>
+    </>
+  );
 };
+
+jobs.Layout = "L2";
+
+export default jobs;

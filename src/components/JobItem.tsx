@@ -9,7 +9,7 @@ interface JobItemProps {}
 export const JobItem: React.FC<JobItemProps> = ({}) => {
   return (
     <div className="card-item">
-      <Card >
+      <Card hoverable>
         <Row gutter={[8, 16]}>
           <Col span={4}>
             <Image

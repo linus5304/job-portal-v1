@@ -34,6 +34,11 @@
   position: fixed;
 }
 
+/* Menu */
+.menu-item a{
+  width: 100%;
+}
+
 /* circle Icons */
 
 .circle-icon {
@@ -97,8 +102,8 @@
   background:#470137;
   /* background-image:url('/images/background.jpg'); */
   background-size:cover;
-  height: 440px;
   position: relative;
+  
   margin-bottom: 4%;
   color:#fff;
 }
@@ -141,7 +146,6 @@
 .hero-employer-section{
   height: 100%;
   padding: 3% 0;
-  background: #fff;
 }
 
 .hero-post-section{
@@ -160,7 +164,7 @@
   
 }
 .latest-jobs-section{
-  background: #f4f6f9;
+  background: #fff;
   padding: 5% 0;
   height: 100%;
 }
@@ -299,4 +303,14 @@
 
 .site-layout .site-layout-background {
   background: #fff;
+}
+.site-layout{
+  background: #f1f1f1;
+}
+
+
+/* checkbox */
+.ant-checkbox-wrapper{
+  margin-left:0px !important;
+  padding: 2% !important;
 }

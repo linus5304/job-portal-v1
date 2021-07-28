@@ -1,5 +1,5 @@
-import Icon from "@ant-design/icons/lib/components/Icon";
 import { Button, Menu, Badge, Dropdown, Avatar, Image } from "antd";
+import Link from "next/link";
 import React from "react";
 import { BsPlus } from "react-icons/bs";
 import { FaBell, FaChevronDown, FaKeycdn } from "react-icons/fa";
@@ -42,22 +42,30 @@ export const Navbar: React.FC<NavbarProps> = ({ user }) => {
     navbar = (
       <>
         <div className="header">
-          <div style={{alignItems: 'center', display: 'flex'}}>
+        <Link href="/">
+          <div style={{alignItems: 'center', display: 'flex', cursor: 'pointer'}}>
+            
             <FaKeycdn style={{fontSize: 35, fontWeight:'bold'}}/>
             <div style={{fontSize: 20, fontWeight:'bold'}}>goJobs</div>
+            
           </div>
+          </Link>
           <Menu
             mode="horizontal"
             style={{width:500}}
           >
-            <Menu.Item key="1">Jobs</Menu.Item>
+            <Menu.Item key="1" className="menu-item">
+              <Link href="/jobs">
+                Jobs
+              </Link>
+            </Menu.Item>
             <Menu.Item key="2">Companies</Menu.Item>
             <Menu.Item key="3">
               <Button type="link" size="large">
                 Login
               </Button>
             </Menu.Item>
-            <Menu.Item key="4">
+            <Menu.Item key="4" style={{border: 'none !important'}}>
               <Button type="link" size="large" style={{fontWeight:'bold'}}>
                 Sign up
               </Button>

@@ -21,7 +21,7 @@ export const HomeLayout: React.FC<HomeLayoutProps> = ({children}) => {
         <Navbar user="user" />
       </Header>
       <Content className="site-layout" style={{ marginTop: 64 }}>
-        <div className="site-layout-background">
+        <div >
           {children}
         </div>
       </Content>

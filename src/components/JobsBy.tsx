@@ -22,7 +22,8 @@ export const JobsBy: React.FC<JobsByProps> = ({}) => {
                         <Button size="large" style={{fontWeight: 'bold', background:'#F3EFFA'}}>Sign Up</Button>
                     </Space>
                 </div>
-                
+
             </div>
+
         );
 };
