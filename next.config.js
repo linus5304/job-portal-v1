@@ -3,8 +3,8 @@ const withAntdLess = require("next-plugin-antd-less");
 module.exports = withAntdLess({
   // optional
   modifyVars: {
-    "@primary-color": "#00B074", // primary color for all components
-    "@link-color": "#00B074", // link color
+    "@primary-color": "#470137", // primary color for all components
+    "@link-color": "#470137", // link color
     "@success-color": "#52c41a", // success state color
     "@warning-color": "#faad14", // warning state color
     "@error-color": " #f5222d", // error state color
