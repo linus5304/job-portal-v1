@@ -19,7 +19,7 @@ export const Filter: React.FC<FilterProps> = ({title, values}) => {
               
                 <FilterCheckbox value={value} key={value}/>
               
-          ))}
+          ))}   
         
         
       </Checkbox.Group>

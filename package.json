@@ -20,6 +20,7 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@tinymce/tinymce-react": "^3.12.6",
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.1",

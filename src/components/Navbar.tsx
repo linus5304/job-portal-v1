@@ -52,11 +52,16 @@ export const Navbar: React.FC<NavbarProps> = ({ user }) => {
           </Link>
           <Menu
             mode="horizontal"
-            style={{width:500}}
+            
           >
             <Menu.Item key="1" className="menu-item">
               <Link href="/jobs">
                 Jobs
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="5" className="menu-item">
+              <Link href="/new-job">
+                Post Job
               </Link>
             </Menu.Item>
             <Menu.Item key="2">Companies</Menu.Item>
