@@ -65,10 +65,15 @@ export const Navbar: React.FC<NavbarProps> = ({ user }) => {
               </Link>
             </Menu.Item>
             <Menu.Item key="2">Companies</Menu.Item>
-            <Menu.Item key="3">
-              <Button type="link" size="large">
+            <Menu.Item key="3" className="menu-item">
+            <Button type="link">
+
+            <Link href="/login">
+              
                 Login
+              </Link>
               </Button>
+
             </Menu.Item>
             <Menu.Item key="4" style={{border: 'none !important'}}>
               <Button type="link" size="large" style={{fontWeight:'bold'}}>
@@ -103,7 +108,7 @@ export const Navbar: React.FC<NavbarProps> = ({ user }) => {
           }}
         >
           <div key="1">
-            <Button type="primary" size="large">
+            <Button type="primary" size="large" >
               Login
             </Button>
           </div>

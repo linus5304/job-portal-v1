@@ -20,9 +20,9 @@ export const PostJob: React.FC<PostJobProps> = ({heading}) => {
   }
   return (
     <>
-     <h2 style={{textAlign: 'center', fontSize:'1.5em', fontWeight: 'bold', paddingTop: '2%'}}>{heading}</h2>
-            <Divider />
-      <FormWrapper >
+     
+            
+      <FormWrapper heading={heading}>
       
         <Form name="basic" wrapperCol={{ span: 24 }} layout="vertical">
           <Form.Item label="Title" name="title">
@@ -93,7 +93,7 @@ export const PostJob: React.FC<PostJobProps> = ({heading}) => {
 
           <Form.Item wrapperCol={{ offset: 10 }}>
             <Button type="primary" htmlType="submit" size="large">
-              Submit
+              Preview
             </Button>
           </Form.Item>
         </Form>

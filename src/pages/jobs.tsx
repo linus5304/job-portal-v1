@@ -26,7 +26,7 @@ const jobs: React.FC<jobsProps> = ({}) => {
             <h2>9 Jobs Found</h2> 
               <JobItem />
               <JobItem />
-              <div style={{display: 'flex', justifyContent:'center'}}>
+              <div className="btn-center">
               <Button type="primary" size="large" loading={false}>Load more</Button>
               </div>
             </Col>

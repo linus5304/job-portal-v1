@@ -20,6 +20,7 @@ export const RichText: React.FC<RichTextProps> = ({}) => {
         init={{
           height: 200,
           menubar: false,
+          z_index:0,
           plugins: [
             "advlist autolink lists link image charmap print preview anchor",
             "searchreplace visualblocks code fullscreen",
