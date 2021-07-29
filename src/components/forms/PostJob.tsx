@@ -29,12 +29,8 @@ export const PostJob: React.FC<PostJobProps> = ({heading}) => {
             <Input size="large" placeholder="Title"/>
           </Form.Item>
 
-          <Form.Item label="Job Description" name="description">
-            <Input size="large" />
-          </Form.Item>
-          <Form.Item label="Job Description" name="description">
-            <RichText/>
-          </Form.Item>
+          
+          
           <Row justify="space-between">
             <Col span={11}>
               <Form.Item label="Job Type" name="type">
@@ -87,8 +83,11 @@ export const PostJob: React.FC<PostJobProps> = ({heading}) => {
               </Form.Item>
             </Col>
           </Row>
-          <Form.Item label="Expiration Date" name="exp-date" wrapperCol={{ span:20}}>
+          {/* <Form.Item label="Expiration Date" name="exp-date" wrapperCol={{ span:20}}>
             <DatePicker onChange={onChange} size="large" style={{width: '50%'}}/>
+          </Form.Item> */}
+          <Form.Item label="Job Description" name="description">
+            <RichText/>
           </Form.Item>
 
           <Form.Item wrapperCol={{ offset: 10 }}>

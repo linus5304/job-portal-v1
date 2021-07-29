@@ -21,13 +21,13 @@ export const login: React.FC<loginProps> = ({}) => {
                   <Link href="/forgot-password">Forgot password</Link>
                   </div>
               </Form.Item>
-              <Form.Item
+              {/* <Form.Item
                 name="remember"
                 valuePropName="checked"
                 wrapperCol={{ offset: 0, span: 16 }}
               >
                 <Checkbox>Remember me</Checkbox>
-              </Form.Item>
+              </Form.Item> */}
               <Form.Item>
                 <div className="btn-center">
                   <Button
@@ -42,8 +42,8 @@ export const login: React.FC<loginProps> = ({}) => {
               </Form.Item>
               
                   <div style={{display:'flex'}} className="a-link">
-                      <Link href="/employer-register">Employer Registration</Link>
-                  <Link href="/jobseeker-regiter">Job Seeker Registration</Link>
+                      <Link href="/register/employer">Employer Registration</Link>
+                  <Link href="/register/job-seeker">Job Seeker Registration</Link>
               </div>
             </Form>
           </FormWrapper>

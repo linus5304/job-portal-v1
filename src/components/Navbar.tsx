@@ -75,9 +75,11 @@ export const Navbar: React.FC<NavbarProps> = ({ user }) => {
               </Button>
 
             </Menu.Item>
-            <Menu.Item key="4" style={{border: 'none !important'}}>
+            <Menu.Item key="4" className="menu-item">
               <Button type="link" size="large" style={{fontWeight:'bold'}}>
+              <Link href="/register">
                 Sign up
+                </Link>
               </Button>
             </Menu.Item>
           </Menu>
