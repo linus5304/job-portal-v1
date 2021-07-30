@@ -1,11 +1,11 @@
-
-import React from "react";
+import React  from "react";
 
 import { Home } from "../components/Home";
-import { HomeLayout } from "../components/HomeLayout";
 
-interface indexProps {}
-const index: React.FC<indexProps> = ({}) => {
+type indexComponent = React.FC & {Layout: string}
+
+// interface indexProps {}
+const index: indexComponent = ({}) => {
   return (
     <Home/>
   );

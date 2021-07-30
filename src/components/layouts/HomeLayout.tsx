@@ -1,13 +1,8 @@
 import { Layout } from "antd";
 import { Header, Content, Footer } from "antd/lib/layout/layout";
 import React from "react";
-import { FeaturedJobs } from "./FeaturedJobs";
-import { Hero } from "./Hero";
-import { HeroPost } from "./HeroPost";
-import { JobsBy } from "./JobsBy";
-import { LatestJobs } from "./LatestJobs";
-import { Navbar } from "./Navbar";
-import { PageFooter } from "./PageFooter";
+import { Navbar } from "../Navbar";
+import { PageFooter } from "../PageFooter";
 
 interface HomeLayoutProps {}
 

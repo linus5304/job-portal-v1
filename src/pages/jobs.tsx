@@ -4,9 +4,11 @@ import { Row, Col, Space, Button } from "antd";
 import { JobItem } from "../components/JobItem";
 import { Filter } from "../components/filter/Filter";
 
-interface jobsProps {}
+type jobsComponent = React.FC & {Layout : string}
 
-const jobs: React.FC<jobsProps> = ({}) => {
+// interface jobsProps {}
+
+const jobs: jobsComponent = ({}) => {
   return (
     <>
       <Hero heroVariant="small"/>

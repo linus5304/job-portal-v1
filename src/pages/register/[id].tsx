@@ -3,13 +3,14 @@ import { useRouter } from "next/router";
 import { EmployerRegister } from "../../components/forms/EmployerRegister";
 import { JobSeekerRegister } from "../../components/forms/JobSeekerRegister";
 
-interface EmployerJSRegisterProps {}
+// interface EmployerJSRegisterProps {}
+type EmployerJSRegisterComponent = React.FC<{}> & {Layout: string}
 
 function onChange(date, dateString) {
   console.log(date, dateString);
 }
 
-const EmployerJSRegister: React.FC<EmployerJSRegisterProps> = ({}) => {
+const EmployerJSRegister: EmployerJSRegisterComponent = ({}) => {
   const router = useRouter();
   const { id } = router.query;
   let data;

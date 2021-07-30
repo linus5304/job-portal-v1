@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeLayout } from './HomeLayout';
+import { HomeLayout } from './layouts/HomeLayout';
 import { JobItem } from './JobItem';
 
 

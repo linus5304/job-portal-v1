@@ -5,12 +5,13 @@ import { FormWrapper } from '../../components/forms/FormWrapper';
 import {FaUser,FaRegBuilding } from 'react-icons/fa'
 
 
-interface RegisterProps{
+// interface RegisterProps{
 
-}
+// }
 
+type RegisterComponent = React.FC & {Layout: string}
 
- const Register: React.FC<RegisterProps> = ({}) => {
+ const Register: RegisterComponent = ({}) => {
         return (
             <div className="container card-center">
         <Card style={{ width: 500 }}>

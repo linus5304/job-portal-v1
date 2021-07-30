@@ -25,7 +25,7 @@ const validateMessages = {
   },
 };
 
-const settings: React.FC<settingsProps> = ({}) => {
+const settings: React.FC<settingsProps> & {Layout: string} = ({}) => {
   const onFinish = (values: any) => {
     console.log(values);
   };

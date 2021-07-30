@@ -2,8 +2,8 @@ import React from "react";
 React.useLayoutEffect = React.useEffect;
 import "antd/dist/antd.css";
 import "../styles/styles.css";
-import { DashboardLayout } from '../components/DashboardLayout';
-import { HomeLayout } from "../components/HomeLayout";
+import { DashboardLayout } from '../components/layouts/DashboardLayout';
+import { HomeLayout } from "../components/layouts/HomeLayout";
 const layouts = {
   L1: DashboardLayout,
   L2: HomeLayout,

@@ -2,12 +2,14 @@ import React from 'react';
 import { PostJob } from './../components/forms/PostJob';
 import {Divider} from 'antd'
 
-interface NewJobProps{
+// interface NewJobProps{
 
-}
+// }
+
+type newJobComponent = React.FC & {Layout: string}
 
 
- const NewJob: React.FC<NewJobProps> = ({}) => {
+ const NewJob: newJobComponent = ({}) => {
         return (
             <>
             <div className="container">

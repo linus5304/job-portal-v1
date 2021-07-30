@@ -3,9 +3,13 @@ import { FormWrapper } from "../components/forms/FormWrapper";
 import { Card, Form, Input, Button, Checkbox , Divider} from "antd";
 import Link from 'next/link'
 
-interface loginProps {}
+// interface loginProps {
+  
+// }
 
-export const login: React.FC<loginProps> = ({}) => {
+type loginComponent = React.FC & {Layout: string}
+
+export const login: loginComponent = ({}) => {
   return (
     <>
       <div className="container card-center">

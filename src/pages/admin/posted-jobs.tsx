@@ -4,7 +4,7 @@ import {columns, data, options} from '../../utils/data'
 
 interface PostedJobsProps {}
 
-const PostedJobs: React.FC<PostedJobsProps> = ({}) => {
+const PostedJobs: React.FC<PostedJobsProps> & {Layout: string} = ({}) => {
   return (
     <>
           <TableLayout columns={columns} data={data} listTitle="Posted Jobs" listNumber={4} options={options}/>

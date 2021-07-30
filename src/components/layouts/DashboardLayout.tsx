@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaSuitcase, FaUserAlt } from "react-icons/fa";
 import { RiDashboardLine, RiSettings3Fill } from "react-icons/ri";
-import { Navbar } from './Navbar';
+import { Navbar } from '../Navbar';
 
 const { Header, Content, Sider } = Layout;
 
