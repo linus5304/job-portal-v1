@@ -1,8 +1,8 @@
 import React from "react";
-import { Hero } from "../components/Hero";
+import { Hero } from "../../components/Hero";
 import { Row, Col, Space, Button } from "antd";
-import { JobItem } from "../components/JobItem";
-import { Filter } from "../components/filter/Filter";
+import { JobListItem } from "../../components/JobListItem";
+import { Filter } from "../../components/filter/Filter";
 
 type jobsComponent = React.FC & {Layout : string}
 
@@ -26,8 +26,8 @@ const jobs: jobsComponent = ({}) => {
             </Col>
             <Col span={20}>
             <h2>9 Jobs Found</h2> 
-              <JobItem />
-              <JobItem />
+              <JobListItem />
+              <JobListItem />
               <div className="btn-center">
               <Button type="primary" size="large" loading={false}>Load more</Button>
               </div>

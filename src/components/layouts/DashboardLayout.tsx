@@ -1,7 +1,7 @@
 import { Layout, Menu } from "antd";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaSuitcase, FaUserAlt } from "react-icons/fa";
+import { FaSuitcase, FaUserAlt, FaKeycdn } from "react-icons/fa";
 import { RiDashboardLine, RiSettings3Fill } from "react-icons/ri";
 import { Navbar } from '../Navbar';
 
@@ -48,7 +48,16 @@ export const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) =>
           style={{ position: "fixed", height: "100vh" }}
           theme="light"
         >
-          <div className="logo" />
+          <div className="logo" >
+          <Link href="/">
+          <div style={{alignItems: 'center', display: 'flex', cursor: 'pointer'}}>
+            
+            <FaKeycdn style={{fontSize: 35, fontWeight:'bold'}}/>
+            <div style={{fontSize: 20, fontWeight:'bold'}}>goJobs</div>
+            
+          </div>
+          </Link>
+          </div>
           <Menu
             theme="light"
             mode="inline"

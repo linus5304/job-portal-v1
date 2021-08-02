@@ -4,9 +4,9 @@ import Link from "next/link";
 import { BsBookmark } from "react-icons/bs";
 import { MdWork, MdLocationOn } from "react-icons/md";
 
-interface JobItemProps {}
+interface JobListItemProps {}
 
-export const JobItem: React.FC<JobItemProps> = ({}) => {
+export const JobListItem: React.FC<JobListItemProps> = ({}) => {
   return (
     <div className="card-item">
       <Card hoverable>
@@ -28,17 +28,17 @@ export const JobItem: React.FC<JobItemProps> = ({}) => {
               }}
             > 
               <div className="card-link">
-              <Link href="/">Credit Analyst [Sample Job] </Link>
+              <Link href="/jobs/1">Credit Analyst [Sample Job] </Link>
               </div>
               
               <BsBookmark style={{ fontSize: 25 }} />
             </div>
             <Space style={{ display: "flex" }} size={16}>
-              <div style={{ alignItems: "center", display:'flex', color: '#a0a0a0' }}>
+              <div className="text-icon-center">
                 <MdWork style={{ fontSize: 20 }} />
                 <div>Sample Employer</div>
               </div>
-              <div style={{ alignItems: "center", display:'flex',  color: '#a0a0a0' }}>
+              <div className="text-icon-center">
                 <MdLocationOn style={{ fontSize: 20  }} />
                 <div> Cambridge, MA, United States</div>
               </div>

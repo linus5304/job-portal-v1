@@ -8,15 +8,15 @@ export const EmployerCard: React.FC<EmployerCardProps> = ({}) => {
   return (
     <Card
       hoverable
-      style={{ width: 240 }}
+      style={{ width: 240, height: 300 }}
       cover={
         <img
           alt="example"
-          src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+          src="/images/logo.png"
         />
       }
     >
-      <Meta title="Europe Street beat" description="www.instagram.com" />
+      <Meta title="Europe Street beat" />
     </Card> 
   );
 };

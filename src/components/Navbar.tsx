@@ -60,7 +60,7 @@ export const Navbar: React.FC<NavbarProps> = ({ user }) => {
               </Link>
             </Menu.Item>
             <Menu.Item key="5" className="menu-item">
-              <Link href="/new-job">
+              <Link href="/jobs/new-job">
                 Post Job
               </Link>
             </Menu.Item>
@@ -89,6 +89,7 @@ export const Navbar: React.FC<NavbarProps> = ({ user }) => {
   } else if (user === "admin") {
     navbar = (
       <div className="header">
+      
         <div>
           <Button
             type="primary"
@@ -104,37 +105,23 @@ export const Navbar: React.FC<NavbarProps> = ({ user }) => {
           mode="horizontal"
           defaultSelectedKeys={["2"]}
           style={{
-            lineHeight: "64px",
             textAlign: "center",
             justifyContent: "space-between",
           }}
         >
-          <div key="1">
-            <Button type="primary" size="large" >
-              Login
-            </Button>
-          </div>
-          <div key="2" style={{ marginTop: "5px" }}>
+          
+          <Menu.Item  key="2" style={{ marginTop: "5px" }} className="menu-item">
             <Badge count={3}>
               <FaBell style={{ fontSize: 25 }} />
             </Badge>
-          </div>
-          <div key="3">
-            <Dropdown overlay={menu} placement="bottomRight" arrow={true}>
-              <a
-                className="ant-dropdown-link"
-                onClick={(e) => e.preventDefault()}
-              >
-                <Avatar
-                  size={50}
-                  src={
-                    <Image src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-                  }
-                />{" "}
-                <FaChevronDown />
-              </a>
-            </Dropdown>
-          </div>
+          </Menu.Item >
+          <Menu.Item  key="3">
+          <Link href="/admin">
+          <Button type="link" style={{fontWeight:'bold'}}>My Account</Button>
+          </Link>
+            
+                
+          </Menu.Item >
         </Menu>
       </div>
     );

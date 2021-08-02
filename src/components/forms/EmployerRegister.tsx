@@ -56,7 +56,7 @@ export const EmployerRegister: React.FC<EmployerRegisterProps> = ({}) => {
           </Row>
           
           <Form.Item label="Logo" name="logo">
-          <Upload>
+          <Upload >
       <Button icon={<UploadOutlined />}>Upload an Image</Button>
     </Upload>
           </Form.Item>

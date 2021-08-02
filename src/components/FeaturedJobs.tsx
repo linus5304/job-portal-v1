@@ -1,6 +1,6 @@
 import React from 'react';
 import { HomeLayout } from './layouts/HomeLayout';
-import { JobItem } from './JobItem';
+import { JobListItem } from './JobListItem';
 
 
 interface FeaturedJobsProps{
@@ -15,10 +15,10 @@ export const FeaturedJobs: React.FC<FeaturedJobsProps> = ({}) => {
               Featured Job
           </div>
                 <div className="container">
-                <JobItem />
-                <JobItem />
-                <JobItem />
-                <JobItem />
+                <JobListItem />
+                <JobListItem />
+                <JobListItem />
+                <JobListItem />
                 </div>
             </div>
         );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { PostJob } from './../components/forms/PostJob';
+import { PostJob } from '../../components/forms/PostJob';
 import {Divider} from 'antd'
 
 // interface NewJobProps{

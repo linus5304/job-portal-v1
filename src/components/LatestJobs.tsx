@@ -1,5 +1,5 @@
 import React from "react";
-import { JobItem } from "./JobItem";
+import { JobListItem } from "./JobListItem";
 import { Button } from "antd";
 
 interface LatestJobsProps {}
@@ -9,10 +9,10 @@ export const LatestJobs: React.FC<LatestJobsProps> = ({}) => {
     <div className="latest-jobs-section">
       <div className="section-heading">Latest Job</div>
       <div className="container">
-        <JobItem />
-        <JobItem />
-        <JobItem />
-        <JobItem />
+        <JobListItem />
+        <JobListItem />
+        <JobListItem />
+        <JobListItem />
         <Button
           type="primary"
           size="large"

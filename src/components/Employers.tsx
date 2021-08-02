@@ -6,17 +6,16 @@ interface EmployersProps {}
 
 export const Employers: React.FC<EmployersProps> = ({}) => {
   return (
-    <div className="hero-employer-section">
-      <div className="container">
+      <div className="container" style={{padding: '3% 0'}}>
         <div className="section-heading">Featured Companies</div>
-        <Carousel autoplay>
+        <div className="hero-employer-section">
           <EmployerCard />
           <EmployerCard />
           <EmployerCard />
           <EmployerCard />
-        </Carousel>
+          </div>
       </div>
-    </div>
+    
   );
 };
 
